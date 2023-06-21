@@ -1,4 +1,4 @@
-namespace Tests.AutoFixture;
+namespace Tests.AutoFixture.Xunit2;
 
 public class SimpleTests
 {

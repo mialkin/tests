@@ -4,7 +4,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D96CD543
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.ReadAppSettings", "tests\Tests.ReadAppSettings\Tests.ReadAppSettings.csproj", "{E5241D85-4004-4CFB-B898-73BA5234848A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.AutoFixture", "tests\Tests.AutoFixture\Tests.AutoFixture.csproj", "{D83512DA-4156-4EF4-BC6C-B682EF2387DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.AutoFixture.Xunit2", "tests\Tests.AutoFixture.Xunit2\Tests.AutoFixture.Xunit2.csproj", "{D83512DA-4156-4EF4-BC6C-B682EF2387DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.AutoFixture.AutoMoq", "tests\Tests.AutoFixture.AutoMoq\Tests.AutoFixture.AutoMoq.csproj", "{D4DFC27D-73BF-4638-BE70-5D88093939C6}"
 EndProject
