@@ -1,5 +1,6 @@
 using AutoFixture;
 using AutoFixture.Kernel;
+using AutoFixture.Xunit2;
 using FluentAssertions;
 using Tests.AutoFixture.AutoMoq.Complex.Domain;
 using Tests.AutoFixture.AutoMoq.Services;
@@ -8,7 +9,21 @@ namespace Tests.AutoFixture.AutoMoq.Complex;
 
 public class ComplexSutTests
 {
-    [Fact]
+    // Will not work because of an error:
+    // AutoFixture was unable to create an instance from Tests.AutoFixture.AutoMoq.Services.ICustomService because it's an interface.
+    /*
+     
+    [Theory]
+    [AutoData]
+    public void Calculate_WillNotWork(ComplexSut sut)
+    {
+        var result = sut.Calculate();
+        result.Should().Be(15);
+    }
+    
+    */
+
+[Fact]
     public void Calculate_ReturnsValidResult()
     {
         var fixture = new Fixture();
