@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Tests.ReadingConfiguration.ExtensionMethods;
+namespace Tests.ReadAppSettings.ExtensionMethods;
 
 public static class ConfigurationExtensions
 {

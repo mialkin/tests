@@ -1,4 +1,4 @@
-namespace Tests.ReadingConfiguration;
+namespace Tests.ReadAppSettings;
 
 public class SampleClientSettings
 {

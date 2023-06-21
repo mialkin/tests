@@ -1,7 +1,7 @@
 using FluentAssertions;
-using Tests.ReadingConfiguration.ExtensionMethods;
+using Tests.ReadAppSettings.ExtensionMethods;
 
-namespace Tests.ReadingConfiguration;
+namespace Tests.ReadAppSettings;
 
 public class SampleTests
 {

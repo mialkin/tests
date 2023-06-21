@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.Configuration;
 
-namespace Tests.ReadingConfiguration;
+namespace Tests.ReadAppSettings;
 
 internal static class Configuration
 {

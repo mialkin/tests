@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D96CD543-2847-4111-96C4-07D8FF5A64B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.ReadingConfiguration", "tests\Tests.ReadingConfiguration\Tests.ReadingConfiguration.csproj", "{E5241D85-4004-4CFB-B898-73BA5234848A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.ReadAppSettings", "tests\Tests.ReadAppSettings\Tests.ReadAppSettings.csproj", "{E5241D85-4004-4CFB-B898-73BA5234848A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
