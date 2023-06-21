@@ -1,6 +1,5 @@
 using AutoFixture;
 using AutoFixture.Kernel;
-using AutoFixture.Xunit2;
 using FluentAssertions;
 using Tests.AutoFixture.AutoMoq.Complex.Domain;
 using Tests.AutoFixture.AutoMoq.Services;
