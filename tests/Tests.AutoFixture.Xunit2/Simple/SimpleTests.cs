@@ -1,7 +1,8 @@
 using AutoFixture.Xunit2;
 using FluentAssertions;
+using Tests.AutoFixture.Xunit2.Simple.Dtos;
 
-namespace Tests.AutoFixture.Xunit2;
+namespace Tests.AutoFixture.Xunit2.Simple;
 
 public class SimpleTests
 {
@@ -17,5 +18,13 @@ public class SimpleTests
     public void AutoData(string value)
     {
         value.Should().NotBeNullOrEmpty(value);
+    }
+    
+    [Theory]
+    [AutoData]
+    public void Dto(UserDto dto)
+    {
+        dto.Id.Should().NotBeEmpty();
+        dto.Username.Should().NotBeEmpty();
     }
 }
