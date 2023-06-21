@@ -26,5 +26,6 @@ public class SimpleTests
     {
         dto.Id.Should().NotBeEmpty();
         dto.Username.Should().NotBeEmpty();
+        dto.CreatedOn.Should().BeAfter(DateTime.MinValue);
     }
 }
