@@ -1,6 +1,6 @@
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using Tests.AutoFixture.Xunit2.Simple.Dtos;
+using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
 
 namespace Tests.AutoFixture.Xunit2.Simple;
 

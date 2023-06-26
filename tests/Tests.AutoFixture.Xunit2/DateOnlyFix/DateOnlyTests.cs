@@ -1,5 +1,6 @@
 using AutoFixture;
 using FluentAssertions;
+using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
 
 namespace Tests.AutoFixture.Xunit2.DateOnlyFix;
 
