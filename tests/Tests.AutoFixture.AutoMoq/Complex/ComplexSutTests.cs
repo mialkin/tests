@@ -22,13 +22,24 @@ public class ComplexSutTests
     
     */
 
-[Fact]
+    [Fact]
     public void Calculate_ReturnsValidResult()
     {
         var fixture = new Fixture();
         fixture.Customizations.Add(new TypeRelay(typeof(ICustomService), typeof(CustomService)));
         var sut = fixture.Create<ComplexSut>();
-        
+
+        var result = sut.Calculate();
+        result.Should().Be(15);
+    }
+
+    [Fact]
+    public void Calculate_WithAutoDomainData_ReturnsValidResult()
+    {
+        var fixture = new Fixture();
+        fixture.Customizations.Add(new TypeRelay(typeof(ICustomService), typeof(CustomService)));
+        var sut = fixture.Create<ComplexSut>();
+
         var result = sut.Calculate();
         result.Should().Be(15);
     }
