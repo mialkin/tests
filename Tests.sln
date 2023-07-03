@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.AutoFixture.AutoMoq",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Moq", "tests\Tests.Moq\Tests.Moq.csproj", "{EAC2604D-DF55-484B-8269-A4DF347D5D1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.TestLogs", "tests\Tests.TestLogs\Tests.TestLogs.csproj", "{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,7 @@ Global
 		{D83512DA-4156-4EF4-BC6C-B682EF2387DE} = {D96CD543-2847-4111-96C4-07D8FF5A64B0}
 		{D4DFC27D-73BF-4638-BE70-5D88093939C6} = {D96CD543-2847-4111-96C4-07D8FF5A64B0}
 		{EAC2604D-DF55-484B-8269-A4DF347D5D1D} = {D96CD543-2847-4111-96C4-07D8FF5A64B0}
+		{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB} = {D96CD543-2847-4111-96C4-07D8FF5A64B0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E5241D85-4004-4CFB-B898-73BA5234848A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +41,9 @@ Global
 		{EAC2604D-DF55-484B-8269-A4DF347D5D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC2604D-DF55-484B-8269-A4DF347D5D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAC2604D-DF55-484B-8269-A4DF347D5D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B9B7EB-C2E4-4421-ACA8-A68CEE81B5DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
