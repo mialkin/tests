@@ -19,9 +19,7 @@ public class ServiceTests
                 It.IsAny<EventId>(),
                 It.IsAny<It.IsAnyType>(),
                 It.IsAny<Exception>(),
-                It.IsAny<Func<It.IsAnyType, Exception?, string>>()
-            )
-        );
+                It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
 
         // Act
         sut.DoJob(number: 15);
@@ -31,7 +29,7 @@ public class ServiceTests
         const int logMessagesIndex = 2;
 
         var loggedMessages = loggerMock.Invocations
-            .Where(x => (LogLevel) x.Arguments[logLevelIndex] == LogLevel.Error)
+            .Where(x => (LogLevel)x.Arguments[logLevelIndex] == LogLevel.Error)
             .Select(x => x.Arguments[logMessagesIndex].ToString());
 
         loggedMessages.Should()
@@ -50,9 +48,7 @@ public class ServiceTests
                 It.IsAny<EventId>(),
                 It.IsAny<It.IsAnyType>(),
                 It.IsAny<Exception>(),
-                It.IsAny<Func<It.IsAnyType, Exception?, string>>()
-            )
-        );
+                It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
 
         // Act
         sut.DoJob(number: 5);
@@ -62,7 +58,7 @@ public class ServiceTests
         const int logMessagesIndex = 2;
 
         var loggedMessages = loggerMock.Invocations
-            .Where(x => (LogLevel) x.Arguments[logLevelIndex] == LogLevel.Information)
+            .Where(x => (LogLevel)x.Arguments[logLevelIndex] == LogLevel.Information)
             .Select(x => x.Arguments[logMessagesIndex].ToString());
 
         loggedMessages.Should()

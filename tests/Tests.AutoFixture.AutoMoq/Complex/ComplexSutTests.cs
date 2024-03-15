@@ -11,7 +11,7 @@ public class ComplexSutTests
     // Will not work because of an error:
     // AutoFixture was unable to create an instance from Tests.AutoFixture.AutoMoq.Services.ICustomService because it's an interface.
     /*
-     
+
     [Theory]
     [AutoData]
     public void Calculate_WillNotWork(ComplexSut sut)
@@ -19,7 +19,7 @@ public class ComplexSutTests
         var result = sut.Calculate();
         result.Should().Be(15);
     }
-    
+
     */
 
     [Fact]

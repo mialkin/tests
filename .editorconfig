@@ -104,6 +104,10 @@ dotnet_diagnostic.SA1201.severity = none
 # https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1413.md
 dotnet_diagnostic.SA1413.severity = none
 
+# A field name in C# begins with an underscore
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1309.md
+dotnet_diagnostic.SA1309.severity = none
+
 # A C# code element is missing a documentation header
 # https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1600.md
 dotnet_diagnostic.SA1600.severity = none

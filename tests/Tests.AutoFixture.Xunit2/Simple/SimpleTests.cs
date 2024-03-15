@@ -19,7 +19,7 @@ public class SimpleTests
     {
         value.Should().NotBeNullOrEmpty(value);
     }
-    
+
     [Theory]
     [AutoData]
     public void Dto(UserDto dto)

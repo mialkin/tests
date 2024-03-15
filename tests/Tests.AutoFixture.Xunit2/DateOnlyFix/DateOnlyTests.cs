@@ -26,6 +26,7 @@ public class DateOnlyTests
     public void DateOnlyWillNotWork()
     {
         var fixture = new Fixture();
+
         // Won't work:
         // var dateOnly = fixture.Create<DateOnly>();
     }
