@@ -1,6 +1,6 @@
-using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
+using Shouldly;
 using Tests.TestLogs.Infrastructure;
 
 namespace Tests.TestLogs;
@@ -15,11 +15,11 @@ public class ServiceTests
         var sut = new Service(loggerMock.Object);
 
         loggerMock.Setup(x => x.Log(
-                LogLevel.Error,
-                It.IsAny<EventId>(),
-                It.IsAny<It.IsAnyType>(),
-                It.IsAny<Exception>(),
-                It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
+            LogLevel.Error,
+            It.IsAny<EventId>(),
+            It.IsAny<It.IsAnyType>(),
+            It.IsAny<Exception>(),
+            It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
 
         // Act
         sut.DoJob(number: 15);
@@ -32,8 +32,7 @@ public class ServiceTests
             .Where(x => (LogLevel)x.Arguments[logLevelIndex] == LogLevel.Error)
             .Select(x => x.Arguments[logMessagesIndex].ToString());
 
-        loggedMessages.Should()
-            .ContainMatch("Error creating a user. *");
+        loggedMessages.ShouldContain("Error creating a user. Operation failed");
     }
 
     [Fact]
@@ -44,11 +43,11 @@ public class ServiceTests
         var sut = new Service(loggerMock.Object);
 
         loggerMock.Setup(x => x.Log(
-                LogLevel.Information,
-                It.IsAny<EventId>(),
-                It.IsAny<It.IsAnyType>(),
-                It.IsAny<Exception>(),
-                It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
+            LogLevel.Information,
+            It.IsAny<EventId>(),
+            It.IsAny<It.IsAnyType>(),
+            It.IsAny<Exception>(),
+            It.IsAny<Func<It.IsAnyType, Exception?, string>>()));
 
         // Act
         sut.DoJob(number: 5);
@@ -61,7 +60,6 @@ public class ServiceTests
             .Where(x => (LogLevel)x.Arguments[logLevelIndex] == LogLevel.Information)
             .Select(x => x.Arguments[logMessagesIndex].ToString());
 
-        loggedMessages.Should()
-            .ContainMatch("Operation succeeded");
+        loggedMessages.ShouldContain("Operation succeeded");
     }
 }

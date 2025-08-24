@@ -1,5 +1,5 @@
 using AutoFixture;
-using FluentAssertions;
+using Shouldly;
 using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
 
 namespace Tests.AutoFixture.Xunit2.DateOnlyFix;
@@ -10,7 +10,7 @@ public class DateOnlyTests
     [DateOnlyAutoData]
     public void DateOnlyFix(ClientDto dto)
     {
-        dto.Day.Should().BeAfter(DateOnly.MinValue);
+        dto.Day.ShouldBeGreaterThan(DateOnly.MinValue);
     }
 
     [Fact]
@@ -19,7 +19,7 @@ public class DateOnlyTests
         var fixture = DateOnlyFixFixture.Create();
         var dateOnly = fixture.Create<DateOnly>(); // Now works
 
-        dateOnly.Should().BeAfter(DateOnly.MinValue);
+        dateOnly.ShouldBeGreaterThan(DateOnly.MinValue);
     }
 
     [Fact]

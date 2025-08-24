@@ -1,4 +1,4 @@
-using FluentAssertions;
+using Shouldly;
 using Tests.ReadAppSettings.ExtensionMethods;
 
 namespace Tests.ReadAppSettings;
@@ -10,6 +10,6 @@ public class SampleTests
     {
         var baseAddress = Configuration.Root.GetRequiredSection<SampleClientSettings>()?.BaseAddress;
 
-        baseAddress.Should().NotBeNullOrWhiteSpace(baseAddress);
+        baseAddress.ShouldNotBeNullOrWhiteSpace(baseAddress);
     }
 }

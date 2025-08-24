@@ -1,5 +1,5 @@
 using AutoFixture.Xunit2;
-using FluentAssertions;
+using Shouldly;
 using Tests.AutoFixture.AutoMoq.Simple.Domain;
 
 namespace Tests.AutoFixture.AutoMoq.Simple;
@@ -11,6 +11,6 @@ public class SimpleSutTests
     public void Calculate_ReturnsValidResult(SimpleSut sut)
     {
         var result = sut.Calculate();
-        result.Should().Be(5);
+        result.ShouldBe(5);
     }
 }

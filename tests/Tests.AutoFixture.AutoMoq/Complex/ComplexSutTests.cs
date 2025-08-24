@@ -1,6 +1,6 @@
 using AutoFixture;
 using AutoFixture.Kernel;
-using FluentAssertions;
+using Shouldly;
 using Tests.AutoFixture.AutoMoq.Complex.Domain;
 using Tests.AutoFixture.AutoMoq.Services;
 
@@ -30,7 +30,7 @@ public class ComplexSutTests
         var sut = fixture.Create<ComplexSut>();
 
         var result = sut.Calculate();
-        result.Should().Be(15);
+        result.ShouldBe(15);
     }
 
     [Fact]
@@ -41,6 +41,6 @@ public class ComplexSutTests
         var sut = fixture.Create<ComplexSut>();
 
         var result = sut.Calculate();
-        result.Should().Be(15);
+        result.ShouldBe(15);
     }
 }

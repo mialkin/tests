@@ -1,5 +1,5 @@
 using AutoFixture;
-using FluentAssertions;
+using Shouldly;
 using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
 
 namespace Tests.AutoFixture.Xunit2.BuildWith;
@@ -20,7 +20,7 @@ public class BuildWithTests
             .Create();
 
         // Assert
-        user.Username.Should().Be(Username);
+        user.Username.ShouldBe(Username);
     }
 
     [Fact]
@@ -34,6 +34,6 @@ public class BuildWithTests
             .Create();
 
         // Assert
-        user.Username.Should().NotBe(Username);
+        user.Username.ShouldNotBe(Username);
     }
 }
