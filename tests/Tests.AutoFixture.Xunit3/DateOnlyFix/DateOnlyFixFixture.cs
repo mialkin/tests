@@ -1,6 +1,6 @@
 using AutoFixture;
 
-namespace Tests.AutoFixture.Xunit2.DateOnlyFix;
+namespace Tests.AutoFixture.Xunit3.DateOnlyFix;
 
 public class DateOnlyFixFixture
 {

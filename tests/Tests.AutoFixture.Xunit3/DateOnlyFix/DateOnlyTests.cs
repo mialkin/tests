@@ -1,8 +1,8 @@
 using AutoFixture;
 using Shouldly;
-using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
+using Tests.AutoFixture.Xunit3.Infrastructure.Dtos;
 
-namespace Tests.AutoFixture.Xunit2.DateOnlyFix;
+namespace Tests.AutoFixture.Xunit3.DateOnlyFix;
 
 public class DateOnlyTests
 {

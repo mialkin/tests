@@ -1,8 +1,8 @@
-using AutoFixture.Xunit2;
+using AutoFixture.Xunit3;
 using Shouldly;
-using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
+using Tests.AutoFixture.Xunit3.Infrastructure.Dtos;
 
-namespace Tests.AutoFixture.Xunit2.Simple;
+namespace Tests.AutoFixture.Xunit3.Simple;
 
 public class SimpleTests
 {

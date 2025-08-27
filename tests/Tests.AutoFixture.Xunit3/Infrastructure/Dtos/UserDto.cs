@@ -1,3 +1,3 @@
-namespace Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
+namespace Tests.AutoFixture.Xunit3.Infrastructure.Dtos;
 
 public record UserDto(Guid Id, string Username, DateTime CreatedOn);

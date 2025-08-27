@@ -1,4 +1,4 @@
-using AutoFixture.Xunit2;
+using AutoFixture.Xunit3;
 using Shouldly;
 using Tests.AutoFixture.AutoMoq.Simple.Domain;
 

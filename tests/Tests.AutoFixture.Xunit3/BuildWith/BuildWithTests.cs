@@ -1,8 +1,8 @@
 using AutoFixture;
 using Shouldly;
-using Tests.AutoFixture.Xunit2.Infrastructure.Dtos;
+using Tests.AutoFixture.Xunit3.Infrastructure.Dtos;
 
-namespace Tests.AutoFixture.Xunit2.BuildWith;
+namespace Tests.AutoFixture.Xunit3.BuildWith;
 
 public class BuildWithTests
 {
