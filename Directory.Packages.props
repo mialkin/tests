@@ -3,6 +3,7 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
     <ItemGroup>
+        <PackageVersion Include="AutoFixture.AutoMoq" Version="5.0.0-preview0012"/>
         <PackageVersion Include="AutoFixture.Xunit3" Version="5.0.0-preview0012"/>
         <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.5"/>
         <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.8"/>

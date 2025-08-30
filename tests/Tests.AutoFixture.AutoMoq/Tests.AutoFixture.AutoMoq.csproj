@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
+        <PackageReference Include="AutoFixture.AutoMoq"/>
         <PackageReference Include="AutoFixture.Xunit3"/>
         <PackageReference Include="Shouldly"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk"/>
