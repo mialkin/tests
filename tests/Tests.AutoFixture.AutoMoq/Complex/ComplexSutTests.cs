@@ -3,6 +3,7 @@ using AutoFixture.Kernel;
 using Shouldly;
 using Tests.AutoFixture.AutoMoq.Complex.Domain;
 using Tests.AutoFixture.AutoMoq.Services;
+using Xunit;
 
 namespace Tests.AutoFixture.AutoMoq.Complex;
 

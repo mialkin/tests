@@ -1,5 +1,6 @@
 using Shouldly;
 using Tests.ReadAppSettings.ExtensionMethods;
+using Xunit;
 
 namespace Tests.ReadAppSettings;
 

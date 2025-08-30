@@ -1,6 +1,7 @@
 using AutoFixture;
 using Shouldly;
 using Tests.AutoFixture.Xunit3.Infrastructure.Dtos;
+using Xunit;
 
 namespace Tests.AutoFixture.Xunit3.BuildWith;
 
